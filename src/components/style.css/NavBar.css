@@ -1,6 +1,6 @@
 
 nav {
-  background: transparents;
+  background: transparent;
   padding: 20px;
   display: flex;
   justify-content: space-around;
@@ -78,12 +78,19 @@ nav {
 }
 
 @media screen and (max-width: 800px) {
+  /* nav {
+    background:#fff;
+  } */
   .logo {
     font-size: 20px;
+    
+  }
+  .logo h2{
+    font-size: 20px;
+    
   }
   .menu-list li a {
-    font-size: 14px;
-    margin-left: 10px;
+    font-size: 1.5rem;
   }
 }
 
@@ -99,7 +106,7 @@ nav {
     flex-direction: column;
     width: 100%;
     position: absolute;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(39, 39, 38, 0.7);
     padding: 20px;
     right: 0;
     opacity:1;
@@ -119,7 +126,7 @@ nav {
 
   .menu-list li a,
   .menu-list li:last-child a {
-    width: 100px;
+    width: 100%;;
     display: block;
     margin: auto;
   }
@@ -127,5 +134,6 @@ nav {
   .menu-list.close {
     right: -100%;
     transition: all 0.5s ease-in-out;
+    display: none;
   }
 }

@@ -25,7 +25,7 @@ const Contact = () => {
       <input className="form-input" type="text" placeholder="YOUR EMAIL ADDRESS"></input>
       <input className="form-input" type="text" placeholder="SUBJECT"></input>
       <textarea className="text-area"  placeholder="WRITE HERE"></textarea>
-      <button className="btn" type="submit">DONATE NOW</button>
+      <button className="contactBtn" type="submit">DONATE NOW</button>
       </div>
     </div>
     </>

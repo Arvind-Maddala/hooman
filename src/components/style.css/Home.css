@@ -186,7 +186,9 @@
 
 
 @media (max-width: 768px){
- 
+ .home , .home-inner {
+   height:100vh;
+ }
   .home-container {
     flex-direction: column;
   }
@@ -232,4 +234,10 @@
     margin-top: 1rem;
   }
  
+}
+
+@media (max-width: 400px) {
+  .home , .home-inner {
+    height:85vh;
+  }
 }

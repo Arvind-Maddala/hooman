@@ -58,6 +58,8 @@ padding: 3rem;
   width: 100%;
   padding:1.25rem;
   margin: 0.5rem 0;
+  border: 1px solid #30313183;
+  border-radius:3px;
 }
 
 .text-area {
@@ -65,15 +67,19 @@ padding: 3rem;
   padding:1.5rem;
   margin: 0.5rem 0;
   height:150px;
+  border: 1px solid #30313183;
+  border-radius:3px;
 }
 
-.btn {
+.contactBtn {
   width: 200px;
   padding:1.5rem;
   margin: 0.5rem 0;
   color: #303131;
   letter-spacing: 3px;
   font-weight: 500;
+  background: #fff;
+  border: none;
 }
 
 ::-webkit-input-placeholder { 

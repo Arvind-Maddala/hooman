@@ -1,0 +1,235 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+
+.home {
+ background:url('../images/bg.jpg');
+ background-size: cover;
+ height: 80vh;
+ position: relative;
+ width: 100vw;
+}
+
+.home-inner {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100vw;
+  background: rgba( 255, 255, 255, 0.00 );
+  backdrop-filter: blur( 50.0px );
+  -webkit-backdrop-filter: blur( 100.0px );
+  height:80vh;
+}
+
+.home-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-text {
+  width: 50%;
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.home-text  h1{
+  font-size: 5rem;
+  font-weight:700;
+}
+.home-text  p{
+  text-align:left;
+  line-height: 2rem;
+  font-size:1.25rem;
+}
+
+.home-bg {
+  background:url('../images/bg-1.png');
+  background-size: cover;
+  width: 399px;
+  height:384px;
+}
+
+
+.home-btn{
+  font-size: 1rem;
+  border:none;
+  width: 200px;
+  padding:1.35rem;
+  margin: 0.5rem 1rem 0 0;
+  color: #303131;
+  letter-spacing: 3px;
+  text-transform:uppercase;
+  border-radius:3px;
+  cursor:pointer;
+}
+
+.btn-1 {
+  background:#fff;
+}
+
+.btn-2 {
+  background:transparent;
+  color: #fff;
+  border:1px solid #fff;
+}
+
+.btn-2:hover{
+  color: #303131;
+  background:#fff;
+  transition: all ease 0.5s;
+}
+
+.dog-container {
+  margin-top: -5rem;;
+}
+
+.dog-cards {
+  width:90%;
+  margin:0 5%;
+  background-color: #fff;
+}
+.donate {
+  background:  url('../images/donate-support.jpg');
+  background-size:cover;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  align-items:center;
+  padding-bottom: 2rem;
+}
+
+.donate h2{
+  font-size:2.5rem;
+  text-align: center;
+}
+.donate, .adoptpup, .adoptdog, .buyfood {
+  width: 25%;
+  height: 500px;
+  border-right: 1px solid rgba(167, 167, 167, 0.541);
+}
+
+.dog-container {
+  position: relative
+}
+.dog-cards{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.adoptdog, .adoptpup, .buyfood {
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:center;
+}
+.adoptdog h3, .adoptpup h3, .buyfood h3{
+  color: #303131;
+  font-size:2rem;
+  margin-top: 1rem;
+}
+
+.adoptdog p, .adoptpup p, .buyfood p{
+  color: #444444;
+  text-align:center;
+  line-height:1.75rem;
+  width:80%;
+  margin: 1.5rem 10%;
+}
+.avatar-1 {
+  background:url('../images/pup.jpg');
+  background-size:cover;
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  margin-top: 1rem;
+}
+.avatar-2 {
+  background:url('../images/dog.jpg');
+  background-size:cover;
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  margin-top: 1rem;
+}
+.avatar-3 {
+  background:url('../images/dog-food.jpg');
+  background-size:cover;
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  margin-top: 1rem;
+}
+.dog-buttons {
+  font-size:1.2rem;
+  width: 100%;
+  padding:2rem;
+  color: #fff;
+  letter-spacing: 3px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.db-1{
+  background-color: rgb(161, 153, 153);
+}
+.db-2{
+  background-color: rgb(202, 179, 128);
+}
+.db-3{
+  background-color: rgb(138, 190, 156);
+}
+
+
+@media (max-width: 768px){
+ 
+  .home-container {
+    flex-direction: column;
+  }
+
+  .home-text {
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+  }
+  .home-bg{
+    width: 200px;
+    height:192px;
+    margin-top: 1rem;;
+  }
+  .home-text  h1{
+    font-size: 3rem;
+    font-weight:700;
+  }
+  .home-text  p{
+    width:100%;
+    text-align:center;
+    font-size:1.25rem;
+    margin: 1rem 0;
+  }
+  .dog-cards {
+    flex-direction: column;
+    width:100%;
+    margin: 0rem;
+  }
+  .adoptdog p, .adoptpup p, .buyfood p{
+    width:100%;
+    margin: 0rem;
+  }
+  .donate, .adoptpup, .adoptdog, .buyfood {
+    width:90%;
+    margin: 5%;
+    border: none;
+  }
+  .avatar-1, .avatar-2, .avatar-3 {
+    margin-top: 1rem;
+  }
+ 
+}

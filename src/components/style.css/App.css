@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan&display=swap');
+
+.app {
+  background-color: #EFEEEC;
+  font-family: 'Kodchasan', sans-serif;
+}
+
+h1, h2{
+  color: #fff;
+}.home-page-pets {
+  text-align: center;
+}
+.home-page-pets h2{
+  font-size: 2.5rem;
+  color:#303131;
+}
+
+.home-page-pets p{
+  font-size:1.5rem;margin-top: 1rem;;
+}

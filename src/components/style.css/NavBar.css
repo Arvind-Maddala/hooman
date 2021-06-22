@@ -1,0 +1,131 @@
+
+nav {
+  background: transparents;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  position: relative;
+  z-index: 99;
+  font-family: 'Kodchasan', sans-serif;
+}
+
+.fas {
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 20px;
+}
+.menu-icon .fa-times {
+  transform: rotate(360deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-icon .fa-bars {
+  transform: rotate(180deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.menu-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+
+
+.menu-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  padding: 0.5rem 1rem;
+  margin-left: 20px;
+
+}
+
+.menu-list li a:hover,
+.menu-list li a.active {
+  background-color: #fff;
+  border-radius:5px;
+  color: rgba(0, 0, 0, 0.4);
+  transition: all 0.5s ease-in-out;
+  font-weight: 700;
+}
+.social-links i{
+  margin: 0 0.25rem;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  border-radius:3px;
+  background: rgba( 255, 255, 255, 0.30 );
+  backdrop-filter: blur( 20.0px );
+  -webkit-backdrop-filter: blur( 20.0px );
+  border-radius: 10px;
+
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    font-size: 20px;
+  }
+  .menu-list li a {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .menu-icon {
+    display: block;
+  }
+  .social-links{
+    display:none;
+  }
+  .menu-list {
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    right: 0;
+    opacity:1;
+    top: 64px;
+    transition: all 1s ease-in-out;
+    
+  }
+
+  .menu-list li {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .menu-list li:last-child {
+    margin-bottom: 0px;
+  }
+
+  .menu-list li a,
+  .menu-list li:last-child a {
+    width: 100px;
+    display: block;
+    margin: auto;
+  }
+
+  .menu-list.close {
+    right: -100%;
+    transition: all 0.5s ease-in-out;
+  }
+}

@@ -1,0 +1,94 @@
+.adopt-container {
+  padding: 2rem;
+}
+.adopt-1, .adopt-2, .adopt-3 {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin: 5rem 2rem;
+}
+
+.adopt-1-image {
+  background: url('../images/whyadopt-1.jpg');
+  width:600px;
+  height:400px;
+  background-size: cover;
+}
+
+.adopt-2-image {
+  background: url('../images/whyadopt-2.jpg');
+  width:600px;
+  height:400px;
+  background-size: cover;
+}
+
+.adopt-3-image {
+  background: url('../images/wwhyadopt-3.jpg');
+  width:600px;
+  height:400px;
+  background-size: cover;
+}
+
+.adopt-text {
+  width:50%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding: 3rem;
+}
+
+.adopt-text  h2 {
+  font-size: 3rem;
+  margin-bottom:1.5rem;
+  color: #303131;
+}
+.adopt-text  p{
+  font-size:0.85rem;
+  margin-bottom:1.5rem;
+}
+
+.adopt-text  button{
+  background-color: #9b5c37a1;
+  padding:1.5rem 5rem;
+  border: none;
+  border-radius:3px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color:#fff;
+}
+.adopt-text  button:hover{
+  background-color: #6d3717a1;
+  padding:1.5rem 5rem;
+  border: none;
+  border-radius:3px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  
+}
+
+
+@media (max-width:768px) {
+  .adopt-1, .adopt-2, .adopt-3{
+    flex-direction:column;
+  }
+
+  .adopt-container {
+    padding: 0.5rem;
+  }
+  .adopt-text {
+    width:100%;
+    padding: 1rem;
+  }
+
+  .adopt-1-image, .adopt-2-image, .adopt-3-image {
+    height:200px;
+    width:300px;
+  }
+  .adopt-2{
+    flex-direction:column-reverse;
+  }
+
+}

@@ -1,24 +1,15 @@
 import React,{useState,useEffect} from 'react';
-import DogCard from './DogCard.jsx';
-import Testimonial from './Testimonial';
+import DogCard from '../helpers/DogCard';
+
 
 const HomePagePets = () => {
   const [pets, setPets] = useState([]);
   
   useEffect(() =>{
-    let mounted = true
     fetch('https://dog.ceo/api/breeds/image/random/3')
     .then(response =>response.json())
-    .then(data =>
-      {
-        if(mounted) {
-          setPets(data.message)
-         }
-      })
+    .then(data =>setPets(data.message))
     .catch(err =>console.error(err))
-    return (()=> {
-      mounted = false
-    })
   },[])
   return (
    <div className="home-page-pets">
@@ -27,7 +18,6 @@ const HomePagePets = () => {
     <div className="dogCards">
       <DogCard data={pets}/>
     </div>
-    <Testimonial />
    </div>
   )
 }

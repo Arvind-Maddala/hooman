@@ -29,14 +29,16 @@
   border: none;
   background: #a37459a1;
   cursor: pointer;
-  padding:1.5rem;
+  padding:1.25rem 4.9rem;
   font-size: 1.25rem;
   letter-spacing: 3px;
   font-weight: bold;
   text-transform: uppercase;
+  font-family: 'Kodchasan', sans-serif;
+  color:#fff;
 }
 
-@media (max-width:768px){
+@media (max-width:767px){
  
   .card img{
     width: 200px;
@@ -50,5 +52,8 @@
   }
   .card {
     margin: 1rem;;
+  }
+  .CardButton{
+    padding:1.25rem 1.8rem;
   }
 }

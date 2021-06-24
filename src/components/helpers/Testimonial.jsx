@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import './style.css/Testimonal.css'
+import '../style.css/Testimonal.css'
 
 export default class Testimonials extends Component {
   render() {

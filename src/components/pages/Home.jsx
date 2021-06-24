@@ -1,11 +1,11 @@
 import React from 'react';
-import NavBar from './NavBar';
-import './style.css/Home.css';
-import Footer from './Footer';
-import ProgressBar from './ProgressBar';
-import HomePagePets from './HomePagePets';
-import Testimonial from './Testimonial';
-import './style.css/DogCard.css'
+import NavBar from '../layouts/NavBar';
+import ProgressBar from '../layouts/ProgressBar';
+import HomePagePets from '../layouts/HomePagePets';
+import Testimonial from '../helpers/Testimonial';
+import BtnComponent from '../helpers/BtnComponent';
+import '../style.css/Home.css';
+import '../style.css/DogCard.css'
 
 
 const Home = () => {
@@ -20,8 +20,8 @@ const Home = () => {
           <h1>Rescue a Pet</h1>
           <p>World’s largest no-kill rescue and adoption organiza tion with hundreds of dogs, cats, puppies and kittens available for adoption every week.</p>
           <div className="buttons">
-            <button className="home-btn btn-1">Learn More</button>
-            <button className="home-btn btn-2">Adopt now</button>
+            <BtnComponent text="learn more" styleName="home-btn btn-1"/>
+            <BtnComponent text="Adopt now" styleName="home-btn btn-2"/>
           </div>
         </div>
         <div className="home-bg">
@@ -34,28 +34,28 @@ const Home = () => {
      <div className="dog-cards">
       <div className="donate">
         <h2>Donate and support us</h2>
-        <button className="home-btn btn-1">Donate now</button>
+        <BtnComponent text="Donate now" styleName="home-btn btn-1"/>
       </div>
         <div className="adoptpup">
           <div className="avatar-1">
           </div>
           <h3>Adopt a Pup</h3>
           <p>World’s largest no-kill rescue and adoption organization with hundreds of dogs, cats, puppies and kittens available</p>
-          <button className="dog-buttons db-1">Adopt pup</button>
+          <BtnComponent text="Adopt pup" styleName="dog-buttons db-1"/>
         </div>
         <div className="adoptdog">
         <div className="avatar-2">
           </div>
           <h3>Adopt a Dog</h3>
           <p>World’s largest no-kill rescue and adoption organization with hundreds of dogs, cats, puppies and kittens available</p>
-          <button className="dog-buttons db-2">Adopt dog</button>
+          <BtnComponent text="Adopt dog" styleName="dog-buttons db-2"/>
         </div>
         <div className="buyfood">
         <div className="avatar-3">
           </div>
           <h3>Buy Food</h3>
           <p>World’s largest no-kill rescue and adoption organization with hundreds of dogs, cats, puppies and kittens available</p>
-          <button className="dog-buttons db-3">Buy Food</button>
+          <BtnComponent text="Buy Food" styleName="dog-buttons db-3"/>
         </div>
       </div>
      </div>
@@ -63,6 +63,7 @@ const Home = () => {
     <div className="progress-bar">
     <ProgressBar done="70"/>
     </div>
+    <HomePagePets/>
     <Testimonial/>
  
     </>

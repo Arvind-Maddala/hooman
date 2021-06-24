@@ -1,10 +1,10 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Home from './components/Home';
-import Contact from './components/Contact';
-import Pets from './components/Pets';
-import WhyAdopt from './components/WhyAdopt';
-import Footer from './components/Footer';
+import Home from './components/pages/Home';
+import Contact from './components/pages/Contact';
+import Pets from './components/pages/Pets';
+import WhyAdopt from './components/pages/WhyAdopt';
+import Footer from './components/layouts/Footer';
 import './components/style.css/App.css';
 
 const App = () => {

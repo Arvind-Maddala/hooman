@@ -98,16 +98,23 @@
   flex-direction:column;
   justify-content:flex-end;
   align-items:center;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .donate h2{
   font-size:2.5rem;
   text-align: center;
+  margin-bottom:2rem;
 }
-.donate, .adoptpup, .adoptdog, .buyfood {
+.donate {
+  height: 540px;
+  width:25%;
+}
+ .adoptpup, .adoptdog, .buyfood {
   width: 25%;
-  height: 500px;
+ 
+}
+.adoptpup, .adoptdog {
   border-right: 1px solid rgba(167, 167, 167, 0.541);
 }
 
@@ -164,18 +171,19 @@
 }
 .dog-buttons {
   font-size:1.2rem;
-  width: 100%;
-  padding:2rem;
+  padding:1rem 2rem;
   color: #fff;
   letter-spacing: 3px;
   font-weight: 500;
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+  margin-bottom: 1.5rem;
 }
 
 .db-1{
   background-color: rgb(161, 153, 153);
+  width: 100%;
 }
 .db-2{
   background-color: rgb(202, 179, 128);
@@ -184,6 +192,11 @@
   background-color: rgb(138, 190, 156);
 }
 
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (max-width: 768px){
  .home , .home-inner {
@@ -238,6 +251,24 @@
 
 @media (max-width: 400px) {
   .home , .home-inner {
-    height:85vh;
+    height:120vh;
   }
 }
+@media (max-width: 320px) {
+  .home , .home-inner {
+    height:130vh;
+  }
+}
+
+@media (max-width:1000px) and (min-width: 800px) {
+  .home , .home-inner {
+    height:120vh;
+  }
+}
+@media (min-width: 1100px) and (max-width:1300px) {
+  .home , .home-inner {
+    height: 100vh;
+  }
+ 
+}
+

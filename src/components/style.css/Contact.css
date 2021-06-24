@@ -77,9 +77,12 @@ padding: 3rem;
   margin: 0.5rem 0;
   color: #303131;
   letter-spacing: 3px;
-  font-weight: 500;
+  font-weight: 600;
   background: #fff;
   border: none;
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 ::-webkit-input-placeholder { 
@@ -88,7 +91,7 @@ padding: 3rem;
   font-weight: 500;
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
  .contact-container {
    flex-direction: column;
    justify-content: center;
@@ -102,4 +105,15 @@ padding: 3rem;
    justify-content: center;
    align-items: center;
  }
+ .main {
+
+  height:60vh;
+
+  
+
+}
+.main-inner {
+
+height:60vh;
+}
 }

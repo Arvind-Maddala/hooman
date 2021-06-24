@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React from 'react';
-import NavBar from './NavBar';
-import './style.css/Contact.css';
+import NavBar from '../layouts/NavBar';
+import '../style.css/Contact.css';
+import BtnComponent from '../helpers/BtnComponent';
 
 const Contact = () => {
   return (
@@ -25,7 +26,8 @@ const Contact = () => {
       <input className="form-input" type="text" placeholder="YOUR EMAIL ADDRESS"></input>
       <input className="form-input" type="text" placeholder="SUBJECT"></input>
       <textarea className="text-area"  placeholder="WRITE HERE"></textarea>
-      <button className="contactBtn" type="submit">DONATE NOW</button>
+      <BtnComponent text='Donate now' styleName="contactBtn"/>
+      
       </div>
     </div>
     </>

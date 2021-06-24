@@ -1,24 +1,21 @@
 import React, {useState, useEffect} from 'react';
-import DogCard from './DogCard';
-import './style.css/DogCard.css';
-import NavBar from './NavBar';
+import DogCard from '../helpers/DogCard';
+import '../style.css/DogCard.css';
+import NavBar from '../layouts/NavBar';
 
 const Pets = () => {
   const [pets, setPets] = useState([]);
+
   useEffect(() =>{
-    let mounted = true
+    console.log('Fetch')
     fetch('https://dog.ceo/api/breeds/image/random/50')
     .then(response =>response.json())
     .then(data =>{
-      if(mounted) {
         setPets(data.message)
-       }
     })
-    .catch(err =>console.error(err))
-    return (()=> {
-      mounted = false
-    })
+    .catch(err =>console.error(err));
   },[])
+
   return (
     <>
     <div className="main">

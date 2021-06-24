@@ -56,6 +56,7 @@ const Home = () => {
           <h3>Buy Food</h3>
           <p>World’s largest no-kill rescue and adoption organization with hundreds of dogs, cats, puppies and kittens available</p>
           <BtnComponent text="Buy Food" styleName="dog-buttons db-3"/>
+
         </div>
       </div>
      </div>

@@ -43,6 +43,8 @@
   text-align:left;
   line-height: 2rem;
   font-size:1.25rem;
+  color: #fff;
+  font-family: 'Kodchasan', sans-serif;
 }
 
 .home-bg {
@@ -52,22 +54,30 @@
   height:384px;
 }
 
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:65%;
+  
+}
 
 .home-btn{
   font-size: 1rem;
   border:none;
-  width: 200px;
-  padding:1.35rem;
-  margin: 0.5rem 1rem 0 0;
+  width: 100%;
+  padding:1.25rem 2rem;
   color: #303131;
   letter-spacing: 3px;
   text-transform:uppercase;
   border-radius:3px;
   cursor:pointer;
+  
 }
 
 .btn-1 {
   background:#fff;
+  
 }
 
 .btn-2 {
@@ -192,11 +202,7 @@
   background-color: rgb(138, 190, 156);
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 @media (max-width: 768px){
  .home , .home-inner {
@@ -246,17 +252,33 @@
   .avatar-1, .avatar-2, .avatar-3 {
     margin-top: 1rem;
   }
+  .buttons {
+    width:100%;
+    flex-direction: column;
+  }
+  .home-btn{
+    margin-bottom: 1rem;
+  }
  
+}
+@media (max-width: 320px) {
+  .home , .home-inner {
+    height:130vh;
+  }
 }
 
 @media (max-width: 400px) {
   .home , .home-inner {
     height:120vh;
   }
+.button.home-btn {
+  padding:0.5rem;
 }
-@media (max-width: 320px) {
+}
+
+@media (max-width: 375px) {
   .home , .home-inner {
-    height:130vh;
+    height:90vh;
   }
 }
 

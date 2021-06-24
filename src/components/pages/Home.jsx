@@ -20,8 +20,8 @@ const Home = () => {
           <h1>Rescue a Pet</h1>
           <p>World’s largest no-kill rescue and adoption organiza tion with hundreds of dogs, cats, puppies and kittens available for adoption every week.</p>
           <div className="buttons">
-            <BtnComponent text="learn more" styleName="home-btn btn-1"/>
-            <BtnComponent text="Adopt now" styleName="home-btn btn-2"/>
+            <BtnComponent text="learn more" styleName="btn-1"/>
+            <BtnComponent text="Adopt now" styleName="btn-2"/>
           </div>
         </div>
         <div className="home-bg">
@@ -34,7 +34,7 @@ const Home = () => {
      <div className="dog-cards">
       <div className="donate">
         <h2>Donate and support us</h2>
-        <BtnComponent text="Donate now" styleName="home-btn btn-1"/>
+        <BtnComponent text="Donate now" styleName="btn-3"/>
       </div>
         <div className="adoptpup">
           <div className="avatar-1">

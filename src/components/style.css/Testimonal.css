@@ -100,7 +100,7 @@
   background-size:cover;
   display:block;
   margin:auto;
-  margin-top: 2%;
+  margin-top: 5%;
 }
 .avatar1 {
   background:url(../images/testimonial-3.png);
@@ -111,7 +111,7 @@
   background-size:cover;
   display:block;
   margin:auto;
-  margin-top: 2%;
+  margin-top: 5%;
 }
 .avatar2 {
   background:url(../images/testimonial.jpg);
@@ -122,14 +122,12 @@
   background-size:cover;
   display:block;
   margin:auto;
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
 @media only screen and (max-width: 934px) {
   .carousel-root {
     outline: 0;
-    width: 93% !important;
-    margin: auto !important;
   }
 
   .carousel.carousel-slider .control-arrow {

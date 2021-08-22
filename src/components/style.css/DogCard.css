@@ -22,14 +22,13 @@
   width: 300px;
   height: 400px;
   object-fit: cover;
-  /* margin:1rem 0.5rem 0 1rem; */
 }
 .CardButton {
   width: 100%;
   border: none;
   background: #a37459a1;
   cursor: pointer;
-  padding:1.25rem 4.9rem;
+  padding:20px 79px;
   font-size: 1.25rem;
   letter-spacing: 3px;
   font-weight: bold;
@@ -54,6 +53,6 @@
     margin: 1rem;;
   }
   .CardButton{
-    padding:1.25rem 1.8rem;
+    padding:16px 28px;;
   }
 }

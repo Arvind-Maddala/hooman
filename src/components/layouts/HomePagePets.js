@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import DogCard from '../helpers/DogCard';
+import '../style.css/App.css'
 
 
 const HomePagePets = () => {

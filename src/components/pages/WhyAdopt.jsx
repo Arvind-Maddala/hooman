@@ -7,7 +7,7 @@ import BtnComponent from '../helpers/BtnComponent';
 
 const WhyAdopt = () => {
   useEffect(() => {
-    Aos.init({duration: 1000});
+    Aos.init({duration: 2000});
    }, [])
   return (
     <>

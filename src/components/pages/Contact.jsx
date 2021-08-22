@@ -8,7 +8,7 @@ import BtnComponent from '../helpers/BtnComponent';
 
 const Contact = () => {
   useEffect(() => {
-    Aos.init({duration: 1000});
+    Aos.init({duration: 2000});
    }, [])
   return (
     <>

@@ -19,3 +19,16 @@ h1, h2{
 .home-page-pets p{
   font-size:1.5rem;margin-top: 1rem;;
 }
+
+@media (max-width:768px) {
+  .home-page-pets h2{
+    font-size: 1.75rem;
+    color:#303131;
+    padding:1rem;
+  }
+  .home-page-pets p{
+    font-size:1.2rem;
+    padding:1rem;
+    margin-top: 0;
+  }
+}

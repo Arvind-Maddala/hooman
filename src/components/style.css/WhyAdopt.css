@@ -110,7 +110,10 @@
     width:100%;
     padding: 1rem;
   }
-
+  .adopt-text  h2{
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
   .adopt-1-image, .adopt-2-image, .adopt-3-image {
     height:200px;
     width:300px;

@@ -5,46 +5,33 @@
 }
 
 .home {
- background:url('../images/bg.jpg');
+ background:url('../images/bg.png');
  background-size: cover;
- height: 80vh;
  position: relative;
  width: 100vw;
+ height: 100%;
+}
+.home-text{
+  width: 50%;
 }
 
-.home-inner {
-  position: absolute;
-  text-align: center;
-  top: 0;
-  width: 100vw;
-  background: rgba( 255, 255, 255, 0.00 );
-  backdrop-filter: blur( 50.0px );
-  -webkit-backdrop-filter: blur( 100.0px );
-  height:80vh;
+.home-text h1{
+  font-size: 3rem;
+  font-weight:700;
 }
-
-.home-container {
+.home__context {
   display:flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem 3rem 4rem 3rem;
 }
-.home-text {
-  width: 50%;
-  display:flex;
-  flex-direction:column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.home-text  h1{
-  font-size: 5rem;
-  font-weight:700;
-}
+
 .home-text  p{
   text-align:left;
-  line-height: 2rem;
+  line-height: 1.5;
   font-size:1.25rem;
   color: #fff;
-  font-family: 'Kodchasan', sans-serif;
+  margin: 1rem 0;
 }
 
 .home-bg {
@@ -76,6 +63,20 @@
   padding:1rem 2rem;
   
 }
+
+.btn-2 {
+  background:transparent;
+  color: #fff;
+  border:1px solid #fff;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  text-transform:uppercase;
+  border-radius:3px;
+  cursor:pointer;
+  margin:1rem;
+  padding:15px 31px;
+}
+
 .btn-3 {
   background:#fff;
   font-size: 1rem;
@@ -90,18 +91,7 @@
   
 }
 
-.btn-2 {
-  background:transparent;
-  color: #fff;
-  border:1px solid #fff;
-  font-size: 1rem;
-  letter-spacing: 3px;
-  text-transform:uppercase;
-  border-radius:3px;
-  cursor:pointer;
-  margin:1rem;
-  padding:1rem 2rem;
-}
+
 
 .btn-2:hover{
   color: #303131;
@@ -110,7 +100,7 @@
 }
 
 .dog-container {
-  margin-top: -5rem;;
+  margin-top: -4rem;;
 }
 
 .dog-cards {
@@ -222,11 +212,10 @@
 
 
 @media (max-width: 768px){
- .home , .home-inner {
-   height:100vh;
- }
-  .home-container {
+
+  .home__context {
     flex-direction: column;
+    padding: 1rem;
   }
 
   .home-text {
@@ -242,10 +231,7 @@
     height:192px;
     margin-top: 1rem;;
   }
-  .home-text  h1{
-    font-size: 3rem;
-    font-weight:700;
-  }
+
   .home-text  p{
     width:100%;
     text-align:center;

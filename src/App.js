@@ -18,7 +18,6 @@ const App = () => {
         <Route path="/contact"><Contact/></Route>
       </Switch>
     </Router>
-    <Footer />
     </div>
   )
 }

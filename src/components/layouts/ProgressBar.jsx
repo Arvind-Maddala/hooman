@@ -1,7 +1,12 @@
-import React, {useState} from 'react';
-import '../style.css/ProgressBar.css'
+import React, {useState, useEffect} from 'react';
+import '../style.css/ProgressBar.css';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 const ProgressBar = ({done}) => {
+  useEffect(() => {
+    Aos.init({duration: 2000});
+   }, [])
 	const [style, setStyle] = useState({});
 	
 	setTimeout(() => {
@@ -11,10 +16,10 @@ const ProgressBar = ({done}) => {
 		}
 		
 		setStyle(newStyle);
-	}, 200);
+	}, 1000);
 	
 	return (
-		<div className="progress-body">
+		<div data-aos="fade-up" className="progress-body">
       <div className="progress-left">
         <h1>About the Sanctuary</h1>
         <p>World’s largest no-kill rescue and adoption organiza tion with hundreds of dogs, cats, puppies and kittens available for adoption</p>

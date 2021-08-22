@@ -1,31 +1,31 @@
 .adopt-container {
-  padding: 2rem;
+  padding: 1rem;
 }
 .adopt-1, .adopt-2, .adopt-3 {
   display:flex;
   justify-content:center;
   align-items:center;
-  margin: 5rem 2rem;
+  margin: 3rem 2rem;
 }
 
 .adopt-1-image {
   background: url('../images/whyadopt-1.jpg');
-  width:600px;
-  height:400px;
+  width:550px;
+  height:350px;
   background-size: cover;
 }
 
 .adopt-2-image {
   background: url('../images/whyadopt-2.jpg');
-  width:600px;
-  height:400px;
+  width:550px;
+  height:350px;
   background-size: cover;
 }
 
 .adopt-3-image {
   background: url('../images/wwhyadopt-3.jpg');
-  width:600px;
-  height:400px;
+  width:550px;
+  height:350px;
   background-size: cover;
 }
 
@@ -35,7 +35,8 @@
   flex-direction:column;
   justify-content:center;
   align-items:center;
-  padding: 3rem;
+  padding: 0 3rem;
+  margin:0 0 0 1rem;
 }
 
 .adopt-text  h2 {
@@ -70,10 +71,36 @@
   
 }
 
+.main {
+  background-image: url('../images/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.main__text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem 4rem;
+}
+
+.main__text h2{
+  font-size: 3rem;
+}
+.main__text p{
+  font-size: 1.75rem;
+  margin-top: 1rem;
+}
 
 @media (max-width:768px) {
+
   .adopt-1, .adopt-2, .adopt-3{
     flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .adopt-container {
@@ -92,4 +119,15 @@
     flex-direction:column-reverse;
   }
 
+  .main__text{
+    text-align:center;
+    padding:2rem;
+  }
+  .main__text h2{
+    font-size: 2rem;
+  }
+  .main__text p{
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
 }

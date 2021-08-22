@@ -19,13 +19,11 @@ const Pets = () => {
   return (
     <>
     <div className="main">
-      </div>
-      <div className="main-inner">
-      <NavBar/>
-      <div className="text-overlay">
-      <h2>Choose your next pet</h2>
+    <NavBar/>
+     <div className="main__text">
+     <h2>Choose your next pet</h2>
       <p>World’s largest no-kill rescue and adoption</p>
-      </div>
+     </div>
       </div>
       <div className="dogCards">
       <DogCard data={pets}/>

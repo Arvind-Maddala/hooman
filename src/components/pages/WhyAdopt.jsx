@@ -1,22 +1,25 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 import NavBar from '../layouts/NavBar';
 import '../style.css/WhyAdopt.css';
 import BtnComponent from '../helpers/BtnComponent';
 
 const WhyAdopt = () => {
+  useEffect(() => {
+    Aos.init({duration: 1000});
+   }, [])
   return (
     <>
     <div className="main">
-      </div>
-      <div className="main-inner">
-      <NavBar/>
-      <div className="text-overlay">
-      <h2>Why adopt</h2>
+    <NavBar/>
+    <div className="main__text">
+    <h2>Why adopt</h2>
       <p>World’s largest no-kill rescue and adoption</p>
-      </div>
+    </div>
       </div>
       <div className="adopt-container">
-        <div className="adopt-1">
+        <div data-aos="fade-up" className="adopt-1">
           <div className="adopt-1-image">
 
           </div>
@@ -26,7 +29,7 @@ const WhyAdopt = () => {
             <BtnComponent text='Adopt now' styleName="whyAdoptBtn"/>
           </div>
         </div>
-        <div className="adopt-2">
+        <div data-aos="fade-up"  className="adopt-2">
           
           <div className="adopt-text">
             <h2>Choose your pet</h2>
@@ -37,7 +40,7 @@ const WhyAdopt = () => {
 
           </div>
         </div>
-        <div className="adopt-3">
+        <div data-aos="fade-up" className="adopt-3">
           <div className="adopt-3-image">
 
           </div>

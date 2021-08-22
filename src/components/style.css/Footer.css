@@ -77,20 +77,22 @@ span {
 }
 
 @media (max-width: 768px){
+  .footer{
+    text-align: center;
+  }
   .footer-items{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .about, .links, .contact {
-    display: flex;
-    flex-direction:column;
-    align-items:flex-start;
-    justify-content: center;
     width: 100%;
-    padding:2rem;
+    padding:1rem;
     line-height: 1.5rem;
+    justify-content: center;
+    align-items: center;
   }
   .copyright, .footer-links  {
     flex-direction:column;
-    text-align: center;
   }
 }

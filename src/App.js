@@ -17,6 +17,7 @@ const App = () => {
         <Route path="/whyadopt"><WhyAdopt/></Route>
         <Route path="/contact"><Contact/></Route>
       </Switch>
+      <Footer/>
     </Router>
     </div>
   )

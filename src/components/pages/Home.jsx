@@ -33,9 +33,6 @@ const Home = () => {
     </div>
     </div>
         
-
-
-    
     <div data-aos="fade-up" className="dog-container">
      <div className="dog-outer">
      <div className="dog-cards">
